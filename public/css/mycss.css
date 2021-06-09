@@ -1,0 +1,138 @@
+form {
+    display: inline-block; /*Or display: inline; */
+}
+form.editor_video, form.editor_link, form.editor_image {
+    width: 100%;
+}
+
+img {
+  display: block;
+  /*max-height: 70px;*/
+  width: inherit;
+}
+table {
+  table-layout: fixed;
+}
+
+th,
+td {
+	width: 100px;
+	overflow: hidden;
+	word-wrap: break-word;
+	overflow-wrap: break-word; 
+}
+.l-input label, .l-input input {
+    float: none; /* if you had floats before? otherwise inline-block will behave differently */
+    display: inline-block;
+    vertical-align: middle;    
+}
+h2, h5 {
+  text-align: center;
+}
+td img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.cut-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+i.fas {
+  float: right;
+  margin-top: 4px;
+}
+.customTop{
+  padding:5px 0 5px 0;
+}
+.customTop .dataTables_filter{
+  position: relative;
+  float:left;
+}
+
+body .modal.addModal2 {
+    /* new custom width */
+    width: 1200px;
+    /* must be half of the width, minus scrollbar on the left (30px) */
+    margin-left: -600px;
+}
+
+.descript_photo {
+  display: inline-block;
+  position: absolute;
+  margin-left: 10px;
+}
+
+.layout_image {
+  max-height: 100px;
+  display: inline-block;
+  margin-left: 7px;
+  margin-right: 15px;
+}
+.e_li{
+  border-right:1px solid darkgrey!important;
+}
+.e_li:hover{
+  background: grey!important;
+}
+.e_a:hover{
+  background: grey!important;
+}
+@media (max-width: 480px){
+  .e_li{
+    border-top:1px solid darkgrey!important;
+  }
+}
+.alignRight{
+  text-align: right!important;
+}
+.alignLeft{
+  text-align: left!important;
+}
+.alignCenter{
+  text-align: center!important;
+}
+.refresh{
+  max-height: 35px;
+  float: right;
+  cursor: pointer;
+}
+.form_action{
+  text-align: center!important;
+  padding-left: 0px!important;
+}
+.action_button{
+  width: 250px!important;
+}
+.loader {
+  position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid black;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
